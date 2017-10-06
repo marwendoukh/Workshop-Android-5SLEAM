@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     tools:context="tn.sleam.five.marwen.a5sleam.WorkshopsList">
 
+    <!-- button to launch recyclerview workshop-->
     <Button
         android:id="@+id/go_to_recyclerview_course"
         android:layout_width="match_parent"

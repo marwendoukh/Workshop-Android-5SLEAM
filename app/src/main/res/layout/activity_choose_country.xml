@@ -7,12 +7,14 @@
     android:orientation="vertical"
     tools:context="tn.sleam.five.marwen.a5sleam.recyclerview.ChooseCountry">
 
+    <!-- spinner that contains the list of countries -->
     <Spinner
         android:id="@+id/spinner_choose_country"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:entries="@array/countries" />
 
+    <!-- button to launch the recyclerview activity -->
     <Button
         android:id="@+id/show_user_list"
         android:layout_width="wrap_content"

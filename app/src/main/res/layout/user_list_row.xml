@@ -4,15 +4,20 @@
     android:layout_height="wrap_content"
     android:layout_margin="10dp">
 
+    <!-- linearlayout that contains 2 textview , vertically -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- textview that will show the name -->
         <TextView
             android:id="@+id/user_name_list_row"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+        <!-- textview that will show the country -->
 
         <TextView
             android:id="@+id/user_country_list_row"

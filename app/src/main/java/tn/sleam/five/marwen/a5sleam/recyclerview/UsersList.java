@@ -24,11 +24,12 @@ public class UsersList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_users_list);
 
-
+        // Recyclerview that will contain the list of users
         RecyclerView rv = (RecyclerView) findViewById(R.id.recycler_view_users_list);
         rv.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         rv.setLayoutManager(mLayoutManager);
+        // organise items vertically
         rv.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
         rv.setItemAnimator(new DefaultItemAnimator());
         // set the Adapter and get user list from the data source
