@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="tn.sleam.five.marwen.a5sleam.MainActivity">
+    tools:context="tn.sleam.five.marwen.a5sleam.WorkshopsList">
 
     <Button
         android:id="@+id/go_to_recyclerview_course"
@@ -11,4 +11,4 @@
         android:layout_height="wrap_content"
         android:text="RecyclerView" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
