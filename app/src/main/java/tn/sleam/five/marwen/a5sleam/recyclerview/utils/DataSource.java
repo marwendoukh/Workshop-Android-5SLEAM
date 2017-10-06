@@ -37,11 +37,11 @@ public class DataSource {
     }
 
     public static List<User> getUsersByCountry(String country) {
+        setUsersInCountries();
         return usersInCountries.get(country);
     }
 
     public static boolean checkCountryExists(String country) {
-        setUsersInCountries();
         return usersInCountries.containsKey(country);
     }
 }
