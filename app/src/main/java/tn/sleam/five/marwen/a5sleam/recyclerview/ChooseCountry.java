@@ -2,6 +2,7 @@ package tn.sleam.five.marwen.a5sleam.recyclerview;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -13,7 +14,7 @@ public class ChooseCountry extends AppCompatActivity {
 
     Spinner chooseCountry;
     Button showUsers;
-
+    FloatingActionButton addUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,8 @@ public class ChooseCountry extends AppCompatActivity {
         chooseCountry = (Spinner) findViewById(R.id.spinner_choose_country);
 
         showUsers = (Button) findViewById(R.id.show_user_list);
+
+        addUser = (FloatingActionButton) findViewById(R.id.add_user_recyclerview_fab);
 
         // set listner on the button
         showUsers.setOnClickListener(new View.OnClickListener() {
@@ -34,6 +37,14 @@ public class ChooseCountry extends AppCompatActivity {
                 i.putExtra("country", chooseCountry.getSelectedItem().toString());
                 // launch the activity that will show the users list
                 startActivity(i);
+            }
+        });
+
+        // add user FAB
+        addUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), AddUser.class));
             }
         });
     }

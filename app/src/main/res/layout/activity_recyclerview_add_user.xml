@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tn.sleam.five.marwen.a5sleam.recyclerview.AddUser">
+
+    <!-- user's name -->
+
+    <EditText
+        android:id="@+id/user_name_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Name" />
+
+    <!-- live at -->
+
+    <EditText
+        android:id="@+id/user_live_at_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Live at" />
+
+    <!-- spinner that contains the list of countries -->
+    <Spinner
+        android:id="@+id/spinner_add_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/countries" />
+
+    <Button
+        android:id="@+id/add_user_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add user" />
+
+</LinearLayout>

@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".recyclerview.ChooseCountry" />
-        <activity android:name=".recyclerview.UsersList"></activity>
+        <activity android:name=".recyclerview.UsersList" />
+        <activity android:name=".recyclerview.AddUser"></activity>
     </application>
 
 </manifest>
