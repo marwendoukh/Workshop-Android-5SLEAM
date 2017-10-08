@@ -37,11 +37,26 @@ public class DataSource {
     }
 
     public static List<User> getUsersByCountry(String country) {
-        setUsersInCountries();
+        // check if the list is empty
+        if (usersInCountries.size() == 0)
+            setUsersInCountries();
         return usersInCountries.get(country);
     }
 
     public static boolean checkCountryExists(String country) {
         return usersInCountries.containsKey(country);
     }
+
+    // add user
+    public static void addUser(User user, String country) {
+        System.out.println(user.getName());
+        List<User> users = new ArrayList<>();
+        users.addAll(getUsersByCountry(country));
+        System.out.println(users.size());
+        users.add(user);
+        System.out.println(users.size());
+        usersInCountries.put(country, users);
+        System.out.println(usersInCountries.values());
+    }
+
 }
