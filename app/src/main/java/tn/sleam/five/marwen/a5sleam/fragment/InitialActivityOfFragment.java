@@ -1,12 +1,11 @@
 package tn.sleam.five.marwen.a5sleam.fragment;
 
 import android.os.Bundle;
-import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
 import tn.sleam.five.marwen.a5sleam.R;
+import tn.sleam.five.marwen.a5sleam.recyclerview.adapter.PagerAdapter;
 
 public class InitialActivityOfFragment extends AppCompatActivity {
 
@@ -19,16 +18,7 @@ public class InitialActivityOfFragment extends AppCompatActivity {
 
         viewPager = (ViewPager) findViewById(R.id.view_pager_initial_activity);
 
-        viewPager.setAdapter(new PagerAdapter() {
-            @Override
-            public int getCount() {
-                return 3;
-            }
-
-            @Override
-            public boolean isViewFromObject(View view, Object object) {
-                return false;
-            }
-        });
+        PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(pagerAdapter);
     }
 }

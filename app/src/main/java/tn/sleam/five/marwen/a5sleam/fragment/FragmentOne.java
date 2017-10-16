@@ -11,11 +11,6 @@ import tn.sleam.five.marwen.a5sleam.R;
 public class FragmentOne extends Fragment {
 
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
