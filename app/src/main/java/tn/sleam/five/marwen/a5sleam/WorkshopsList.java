@@ -6,11 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import tn.sleam.five.marwen.a5sleam.fragment.InitialActivityOfFragment;
 import tn.sleam.five.marwen.a5sleam.recyclerview.ChooseCountry;
 
 public class WorkshopsList extends AppCompatActivity {
 
-    Button goToRecyclerView;
+    Button goToRecyclerView, goToFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +24,15 @@ public class WorkshopsList extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), ChooseCountry.class));
+            }
+        });
+
+        // Fragment workshop
+        goToFragment = (Button) findViewById(R.id.go_to_fragment_course);
+        goToFragment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), InitialActivityOfFragment.class));
             }
         });
     }

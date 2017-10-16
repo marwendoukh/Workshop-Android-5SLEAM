@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="tn.sleam.five.marwen.a5sleam.WorkshopsList">
 
     <!-- button to launch recyclerview workshop-->
@@ -11,5 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="RecyclerView" />
+
+    <!-- button to launch Fragment workshop-->
+    <Button
+        android:id="@+id/go_to_fragment_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragments" />
 
 </LinearLayout>
