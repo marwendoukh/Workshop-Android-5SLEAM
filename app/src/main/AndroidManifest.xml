@@ -20,7 +20,9 @@
         <activity android:name=".recyclerview.UsersList" />
         <activity android:name=".recyclerview.AddUser" />
         <activity android:name=".fragment.InitialActivityOfFragment" />
-        <activity android:name=".sensors.SensorActivity"></activity>
+        <activity
+            android:name=".sensors.SensorActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
