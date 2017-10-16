@@ -14,6 +14,8 @@ import tn.sleam.five.marwen.a5sleam.fragment.FragmentTwo;
 
 public class PagerAdapter extends FragmentPagerAdapter {
 
+    String[] titles = new String[]{"Fragment 1", "Fragment 2", "Fragment 3"};
+
     public PagerAdapter(FragmentManager fm) {
         super(fm);
     }
@@ -31,11 +33,17 @@ public class PagerAdapter extends FragmentPagerAdapter {
             case 2:
                 return new FragmentThree();
         }
+
         return null;
     }
 
     @Override
     public int getCount() {
         return 3;
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return titles[position];
     }
 }
