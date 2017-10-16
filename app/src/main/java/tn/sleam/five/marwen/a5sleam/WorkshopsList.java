@@ -8,10 +8,11 @@ import android.widget.Button;
 
 import tn.sleam.five.marwen.a5sleam.fragment.InitialActivityOfFragment;
 import tn.sleam.five.marwen.a5sleam.recyclerview.ChooseCountry;
+import tn.sleam.five.marwen.a5sleam.sensors.SensorActivity;
 
 public class WorkshopsList extends AppCompatActivity {
 
-    Button goToRecyclerView, goToFragment;
+    Button goToRecyclerView, goToFragment, goToSensors;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +34,15 @@ public class WorkshopsList extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), InitialActivityOfFragment.class));
+            }
+        });
+
+        // Sensors workshop
+        goToSensors = (Button) findViewById(R.id.go_to_sensor_course);
+        goToSensors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), SensorActivity.class));
             }
         });
     }

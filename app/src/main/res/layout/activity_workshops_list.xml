@@ -20,4 +20,11 @@
         android:layout_height="wrap_content"
         android:text="Fragments" />
 
+    <!-- button to launch Fragment workshop-->
+    <Button
+        android:id="@+id/go_to_sensor_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sensors" />
+
 </LinearLayout>
