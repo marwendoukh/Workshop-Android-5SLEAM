@@ -23,7 +23,7 @@
         <activity
             android:name=".sensors.SensorActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".sqlite.AddUser" />
+        <activity android:name=".sqlite.AddCandidate" />
         <activity android:name=".sqlite.RetreiveAllCandidates"></activity>
     </application>
 

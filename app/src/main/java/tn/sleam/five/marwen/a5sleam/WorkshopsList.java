@@ -9,7 +9,7 @@ import android.widget.Button;
 import tn.sleam.five.marwen.a5sleam.fragment.InitialActivityOfFragment;
 import tn.sleam.five.marwen.a5sleam.recyclerview.ChooseCountry;
 import tn.sleam.five.marwen.a5sleam.sensors.SensorActivity;
-import tn.sleam.five.marwen.a5sleam.sqlite.AddUser;
+import tn.sleam.five.marwen.a5sleam.sqlite.AddCandidate;
 
 public class WorkshopsList extends AppCompatActivity {
 
@@ -52,7 +52,7 @@ public class WorkshopsList extends AppCompatActivity {
         goToSQLITE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), AddUser.class));
+                startActivity(new Intent(getApplicationContext(), AddCandidate.class));
             }
         });
     }

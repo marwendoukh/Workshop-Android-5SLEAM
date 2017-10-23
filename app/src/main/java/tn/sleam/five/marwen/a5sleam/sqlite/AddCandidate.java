@@ -12,7 +12,7 @@ import tn.sleam.five.marwen.a5sleam.R;
 import tn.sleam.five.marwen.a5sleam.sqlite.entity.Candidate;
 import tn.sleam.five.marwen.a5sleam.sqlite.utils.LocalStorage;
 
-public class AddUser extends AppCompatActivity {
+public class AddCandidate extends AppCompatActivity {
 
 
     EditText id, nom, poste;
@@ -21,7 +21,7 @@ public class AddUser extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_user);
+        setContentView(R.layout.activity_add_candidate);
 
         id = (EditText) findViewById(R.id.id_candidate_addCandidate);
         nom = (EditText) findViewById(R.id.nom_candidate_addCandidate);
