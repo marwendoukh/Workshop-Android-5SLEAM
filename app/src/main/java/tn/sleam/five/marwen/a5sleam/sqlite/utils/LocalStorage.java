@@ -68,14 +68,14 @@ public class LocalStorage extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
-        String CREATE_CANDIDATE_TABLE = "CREATE TABLE " + CANDIDATE +
+        String CREATE_CANDIDAT_TABLE = "CREATE TABLE " + CANDIDATE +
                 "(" +
                 ID + " INTEGER PRIMARY KEY," + // Define a primary key
                 NAME + " VARCHAR(50) ," +
                 POSTE + " VARCHAR(50)" +
                 ")";
 
-        sqLiteDatabase.execSQL(CREATE_CANDIDATE_TABLE);
+        sqLiteDatabase.execSQL(CREATE_CANDIDAT_TABLE);
 
     }
 
