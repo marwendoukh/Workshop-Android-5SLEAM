@@ -27,4 +27,11 @@
         android:layout_height="wrap_content"
         android:text="Sensors" />
 
+    <!-- button to launch SQLITE workshop-->
+    <Button
+        android:id="@+id/go_to_sqlite_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SQLite" />
+
 </LinearLayout>

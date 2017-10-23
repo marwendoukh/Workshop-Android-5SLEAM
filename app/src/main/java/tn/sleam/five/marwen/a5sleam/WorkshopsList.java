@@ -9,10 +9,11 @@ import android.widget.Button;
 import tn.sleam.five.marwen.a5sleam.fragment.InitialActivityOfFragment;
 import tn.sleam.five.marwen.a5sleam.recyclerview.ChooseCountry;
 import tn.sleam.five.marwen.a5sleam.sensors.SensorActivity;
+import tn.sleam.five.marwen.a5sleam.sqlite.AddUser;
 
 public class WorkshopsList extends AppCompatActivity {
 
-    Button goToRecyclerView, goToFragment, goToSensors;
+    Button goToRecyclerView, goToFragment, goToSensors, goToSQLITE;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +44,15 @@ public class WorkshopsList extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), SensorActivity.class));
+            }
+        });
+
+        // sqlite workshop
+        goToSQLITE = (Button) findViewById(R.id.go_to_sqlite_course);
+        goToSQLITE.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), AddUser.class));
             }
         });
     }

@@ -22,7 +22,9 @@
         <activity android:name=".fragment.InitialActivityOfFragment" />
         <activity
             android:name=".sensors.SensorActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
+        <activity android:name=".sqlite.AddUser" />
+        <activity android:name=".sqlite.RetreiveAllCandidates"></activity>
     </application>
 
 </manifest>
